@@ -1,0 +1,32 @@
+	<ion-view view-title=" {{ video.snippet.title }}" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top"  scroll="true"   id="page-video_singles" class="page-video_singles">
+		
+			<ion-refresher pulling-text="Pull to refresh..."  on-refresh="doRefresh()"></ion-refresher>
+			<div class="list ">
+
+					<!-- id -->
+					<!-- ./id -->
+
+					<!-- heading-1 -->
+					<div class="item item-divider"  ng-bind-html="video.snippet.title | to_trusted">{{video.snippet.title}}</div>
+					<!-- ./heading-1 -->
+
+					<!-- ytube -->
+					<div class="item noborder" ng-if="video.snippet.resourceId.videoId">
+						<div class="embed_container">
+							<iframe  width="100%" ng-src="{{ 'https://www.youtube.com/embed/' + video.snippet.resourceId.videoId + '?enablejsapi=1' | trustUrl }}" frameborder="0" allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+					<!-- ./ytube -->
+
+					<!-- to_trusted -->
+					<div class="item item-text-wrap noborder to_trusted {{ fontsize }}" ng-bind-html="video.snippet.description | strHTML"></div>
+					<!-- ./to_trusted -->
+			</div>
+			<br/><br/><br/>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
