@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.imabuilder.creativemediadesign.amayatower" version="1.0.190702" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.imabuilder.creativemediadesign.amayatower" version="1.0.190704" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Amaya Tower</name>
 	<description>CRM Solutions for Amaya Tower</description>
 	<author email="abbasiagian@gmail.com" href="http://creativemedia.design">Abba Yosua</author>
